@@ -1,0 +1,20 @@
+<div class="container pt-5">
+    <!-- catrgory selector -->
+    <div class=" d-flex justify-content-center  categories ">
+    <p class="all" *ngIf="loaded" (click)="getProducts()">All</p>
+    <ul class=" list-unstyled" *ngFor="let category of  allCategories">
+    <li (click)=" getCategory(category)">{{category}}</li>
+    </ul>
+    </div>
+    <div *ngIf="!loading" class="row g-5" >
+        <!-- add to cart buttons -->
+    <div data-wow-delay="0.5s" class="col-md-3 px-4 wow fadeInDown " *ngFor="let product of allProducts" >
+    <app-product  [data]="product" (item)="addToCart($event)"></app-product>
+    </div>
+    </div>
+    <!-- page spinner -->
+<div *ngIf="loading" class="d-flex justify-content-center align-items-center">
+<app-loader></app-loader>
+</div>
+</div>
+<!-- routerLink="/productdetail/:{{product.id}}" -->

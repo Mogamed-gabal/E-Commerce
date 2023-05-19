@@ -1,0 +1,23 @@
+<div class="conatiner  my-5 pt-4">
+        <form class=" w-75 m-auto" action="" [formGroup]="contantForm">
+            <label  class="mb-1" for="name">Full-Name</label>
+            <input type="text" class=" mb-4 form-control" id="name" formControlName="fullName" placeholder="enter your full name">
+            <div *ngIf="contantForm.get('fullName')?.errors&&contantForm.get('fullName')?.touched">
+            <p *ngIf="contantForm.get('fullName')?.getError('required')" class="alert alert-danger pt-1">this field is requierd</p>
+            </div>
+
+            <label  class="mb-1" for="email">Email</label>
+            <input type="email" id="email"class=" form-control mb-4" formControlName="email" placeholder="enter your full name">
+            <div *ngIf="contantForm.get('email')?.errors&&contantForm.get('email')?.touched">
+            <p *ngIf="contantForm.get('email')?.getError('required')" class="alert alert-danger pt-1">this field is requierd</p>
+            <p *ngIf="contantForm.get('email')?.getError('email')" class="alert alert-danger pt-1">please enter Valid Email</p>
+                </div>
+
+
+            <label class="mb-1" for="explain">Enter Your Explin</label>
+            <textarea name="explain" id="explain" formControlName="explain" class=" form-control" cols="30" rows="10"></textarea>
+
+            <button type="submit" (click)="sendData()" class=" btn btn-primary px-4 py-2 my-2">Send</button>
+            
+        </form>
+</div>

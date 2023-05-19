@@ -1,0 +1,63 @@
+.item
+{
+    padding: 10px;
+    box-shadow: #3b2020bd 10px 15px 20px 1px;
+    border-radius: 10px;
+}
+.item-caption
+{
+    padding: 7px;
+}
+.item-caption h3
+
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+.item-caption p
+{
+    font-size: 21px;
+    font-weight: 300;
+}
+.col-md-3
+{
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.col-md-3:hover
+{
+    transform: scale(1.02);
+}
+.categories ul  
+{
+
+    padding: 7px;
+}
+.categories ul li
+{
+    cursor: pointer;
+    padding: 3px;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: cursive;
+    color: #340505e0;
+    transition: .2s ease-in-out;
+    
+}
+.categories ul li:hover
+{
+    color:rgb(15, 1, 1) ;
+    transform: scale(1.03);
+}
+.all
+{
+    
+    cursor: pointer;
+    padding: 3px;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: cursive;
+    color: #340505e0;
+    transition: .2s ease-in-out;
+    margin-top: 8px;;
+}

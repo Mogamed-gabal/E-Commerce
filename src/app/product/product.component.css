@@ -1,0 +1,39 @@
+.item
+{
+    margin: 15px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+.item img
+{
+    height: 200px;
+}
+.item-caption
+{
+    padding: 7px;
+}
+.item-caption h3
+
+{
+    height: 60px;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+.item-caption p
+{
+    height: 106px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 350;
+  
+   
+
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,12 @@
+.navbar
+{
+    background-image: linear-gradient(171deg, #09040478, #3d1f1fe3);
+    padding: 13px;
+}
+.navbar a
+{
+    color:  white;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: cursive;
+}

@@ -1,0 +1,26 @@
+    <div class="item border " (click)="deatil()">
+        <div class=" w-100">
+            <img class=" w-100 " src="{{data.image}}" alt="">
+        </div>
+       
+        <div class="item-caption  ">
+            <h3>{{data.title | header:5}}</h3>
+            <p class="description">
+                {{data.description|description:10}}....
+            </p>
+            <span style="font-family: fantasy;" class="prics">
+                {{data.price}}$
+            </span>
+        </div>
+        <div class="item-action d-flex justify-content-end w-100 ">
+        
+            <div *ngIf="addButton" class=" d-flex ">
+                <input type="number" min="1"  class=" form-control" [(ngModel)]="amount">
+                <button (click)="add();addButton=false"  class=" btn btn-danger">Add</button>
+            </div>
+            <button (click)="addButton=true" *ngIf="!addButton"  class=" btn btn-danger ">Add to</button>
+        </div>
+        </div>
+        
+
+
